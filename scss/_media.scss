@@ -42,6 +42,7 @@
                 font-weight: 700;
                 color: $light;
                 padding: .3em;
+                opacity: 1;
                 
 
                 span {
@@ -67,6 +68,21 @@
                     
                 }
             }
+        }
+    } 
+    // End of Navigation
+
+    // Landing 
+    .container-landing {
+        background-position: top;
+
+        .margin {
+
+            h3, h2, h1 {
+                
+                text-shadow: 1px 1px 2px black;
+            }
+            
         }
     }
  }
