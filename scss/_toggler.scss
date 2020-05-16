@@ -1,0 +1,66 @@
+
+.hamburger {
+    position: fixed;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    top: 2.5em;
+    right: 0em;
+
+    &:focus , &:active {
+        outline: none;
+    }
+    
+    
+
+    .lines {
+        width: 30px;
+        height: 3px;
+        background: $light;
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+
+        
+        
+        &:nth-child(2) {
+           
+            margin: .3em 0;
+
+            &.open {
+                transform: translateX(-50px);
+                background: transparent;
+            }
+        }
+    }
+
+   
+    &.open .lines:nth-child(2) {
+        
+        background: transparent;
+       
+    }
+
+    &.open .lines:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 11px);
+        background: red;
+    }
+
+    &.open .lines:nth-child(3) {
+        transform: rotate(-45deg) translate(0px, -11px);
+        background: red;
+    }
+
+}
+
+.show-menu {
+    
+    transform: translateY(0%)!important;
+    transition: all 1.5s ease-in-out;
+    opacity: 1!important;
+   
+}      

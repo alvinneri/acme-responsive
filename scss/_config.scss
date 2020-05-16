@@ -10,9 +10,6 @@ $bg-body: #ebebeb;
 $bg-about: #1450d2;
 $bg-footer: #707070;
 
-
-
-
 html, body {
     padding: 0;
     margin: 0;
@@ -20,10 +17,19 @@ html, body {
     scroll-behavior: smooth;
     max-width: 1920px;
     font-family: 'Poppins' , sans-serif;
+    background: $bg-body;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -32,4 +38,9 @@ a {
     &:hover{
         text-decoration: none;
     }
+}
+
+.margin {
+    width: 80%;
+    margin: 0 auto;
 }

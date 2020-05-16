@@ -1,1 +1,73 @@
 @import 'config';
+@import 'toggler';
+
+
+
+// Header
+nav {
+    position: relative;
+    width: 100%;
+}
+.container-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: .5em 0;
+    
+    background: $bg-body;
+
+        .margin {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+
+            .logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                img {
+                    width: 20%;
+                }
+            }
+            .name {
+                position: absolute;
+                left: 20%;
+                top: 30%;
+                transform: translate(-30%, -20%);
+            }
+
+            
+
+            .nav-items {
+                position: absolute;  
+                top: 105%;
+                left: 0%;
+                width: 100%;
+                background-color: white;
+                transform: translateY(-200%);
+                transition: all 1s ease-in-out;
+                opacity: 0;
+                
+            
+                li {
+                    
+                    padding: 1em;
+                    background: $bg-body;
+                    margin: 2em 2em;
+
+                    a {
+                        color: black;
+                        
+                    }
+                }
+            }
+        }
+}
+
+
+
+@import 'media';
