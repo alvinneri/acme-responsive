@@ -12,3 +12,17 @@ btn.addEventListener('click', ()=>{
         menuOpen = false;
     }
 });
+
+// Scroll
+const navigation = document.querySelector('.container-nav');
+
+window.addEventListener("scroll", (e)  => {
+    var scroll = this.scrollY;
+    console.log(scroll)
+
+    if(scroll == 0){ 
+        navigation.style.position = 'relative'
+    } else {
+        navigation.style.position = 'fixed'
+    }
+});

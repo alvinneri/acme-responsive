@@ -6,7 +6,7 @@
 @media (min-width : 992px) {
 
     .container-nav {
-        position: relative;
+        position: relative!important;
         text-align: left;
         background: white;
         border-bottom: 10px solid $dark2;
