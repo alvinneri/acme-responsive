@@ -117,6 +117,56 @@ nav {
     }
 }
 
+// Insights
+.container-insights {
+
+    .margin {
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-bottom: 0;
+            margin-bottom:  0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .container-cards {
+            margin: 2em 0;
+            
+
+            .card {
+                width: 100%;
+                margin: 1em 0;
+                padding: 1em;
+                box-shadow: 0px 0px 5px gray;
+                background: whitesmoke;
+
+                &:nth-child(1) {
+                    color : $card-event1;
+                    border-bottom: 5px solid $card-event1;
+                }
+
+                &:nth-child(2) {
+                    color : $card-event2;
+                    border-bottom: 5px solid $card-event2;
+                }
+
+                &:nth-child(3) {
+                    color : $card-event3;
+                    border-bottom: 5px solid $card-event3;
+                }
+            }
+
+
+        }
+
+        
+    }
+}
+
 
 
 @import 'sm';

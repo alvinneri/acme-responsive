@@ -81,4 +81,25 @@
             
         }
     }
+
+    // Insights 
+    .container-insights {
+        .margin {
+            .container-cards {
+                margin: 2em 0;
+                display: flex;
+                justify-content: space-between;
+    
+                .card {
+                    width: 28%;
+                }
+
+
+            }
+        }
+
+        
+    }
+
+
  }
