@@ -1,0 +1,43 @@
+/* Small (sm) devices (landscape phones 576 and up */
+@media (min-width : 576px) { 
+
+    #navigation {
+        .container-nav {
+            .margin {
+                .logo {
+                    img {
+                        
+                        width: 10%;
+                    }
+                }
+
+                .nav-items {
+                    
+                    li { 
+                        padding: .5em;
+                        
+                        margin: 1em 1em;
+    
+                        a {
+                            color: black;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-landing {
+        background-position: top;
+
+        .margin {
+
+            h3, h2, h1 {
+                
+                text-shadow: 1px 1px 2px black;
+            }
+            
+        }
+    }
+}
