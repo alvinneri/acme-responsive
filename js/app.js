@@ -26,3 +26,13 @@ window.addEventListener("scroll", (e)  => {
         navigation.style.position = 'fixed'
     }
 });
+
+
+
+// GliderJs
+new Glider(document.querySelector('.glider'),{
+    slidesToShow : 1,
+    draggable : true,
+    dots : '#dots',
+   
+});

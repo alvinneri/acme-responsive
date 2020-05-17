@@ -121,6 +121,7 @@ nav {
 .container-insights {
 
     .margin {
+        
 
         h3 {
             font-size: 1.5rem;
@@ -134,16 +135,22 @@ nav {
         }
 
         .container-cards {
+            display: flex;
+            flex-direction: column;
             margin: 2em 0;
-            
+            width: 100%;
 
             .card {
-                width: 100%;
-                margin: 1em 0;
+                width: 90%;
+                margin: 1em auto;
                 padding: 1em;
                 box-shadow: 0px 0px 5px gray;
                 background: whitesmoke;
 
+                img {
+                    width: 100%;
+                    
+                }
                 &:nth-child(1) {
                     color : $card-event1;
                     border-bottom: 5px solid $card-event1;

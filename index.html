@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glider.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -57,17 +58,23 @@
                 <h3>ACME Insights</h3>
                 <p>How are factors being used around the word?</p>
                 <div class="container-cards">
-                    <div class="card">
-                        <img src="./images/card1.png" alt="">
-                        <h3>Global Factor<br/>Investing Factor</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./images/card2.png" alt="">
-                        <h3>2019<br/>Outlook</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./images/card3.png" alt="">
-                        <h3>Capital Market<br/>Assumption</h3>
+                    <div class="glider-contain">
+                        <div class="glider">
+                            <div class="card">
+                                <img src="./images/card1.png" alt="">
+                                <h3>Global Factor<br/>Investing Factor</h3>
+                            </div>
+                            <div class="card">
+                                <img src="./images/card2.png" alt="">
+                                <h3>2019<br/>Outlook</h3>
+                            </div>
+                            <div class="card">
+                                <img src="./images/card3.png" alt="">
+                                <h3>Capital Market<br/>Assumption</h3>
+                            </div>
+                        </div>
+                        
+                        <div role="tablist" id="dots" class="dots"></div>
                     </div>
                 </div>
             </div>
@@ -93,30 +100,30 @@
             <div class="margin">
                 <h3>Upcoming Events</h3>
                 <p>This needs a great tagline but i'll fit it in later</p>
-                <div class="card">
-                    <img src="./images/events.jpg" alt="">
-                    <h4>JAN<span class="date">28</span></h4>
-                    <h3>Insights Exchange Network</h3>
-                    <p>Join us for this conference showcasing innovation...</p>
-                    <button class="btn-events">Get More Insight</button>
-                    <p>Chicago, IL</p>
-                </div>
-                <div class="card">
-                    <img src="./images/events.jpg" alt="">
-                    <h4>FEB<span class="date">12</span></h4>
-                    <h3>Citywide Buyer's Retreat</h3>
-                    <p>Find out how banks are responding to the changing future of interest...</p>
-                    <button class="btn-events">Get More Insight</button>
-                    <p>The Wagner, New York</p>
-                </div>
-                <div class="card">
-                    <img src="./images/events.jpg" alt="">
-                    <h4>May<span class="date">6</span></h4>
-                    <h3>Research Exchange</h3>
-                    <p>Find the best online resources to help with your invesments...</p>
-                    <button class="btn-events">Get More Insight</button>
-                    <p>London, England</p>
-                </div>
+                    <div class="card">
+                        <img src="./images/events.jpg" alt="">
+                        <h4>JAN<span class="date">28</span></h4>
+                        <h3>Insights Exchange Network</h3>
+                        <p>Join us for this conference showcasing innovation...</p>
+                        <button class="btn-events">Get More Insight</button>
+                        <p>Chicago, IL</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/events.jpg" alt="">
+                        <h4>FEB<span class="date">12</span></h4>
+                        <h3>Citywide Buyer's Retreat</h3>
+                        <p>Find out how banks are responding to the changing future of interest...</p>
+                        <button class="btn-events">Get More Insight</button>
+                        <p>The Wagner, New York</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/events.jpg" alt="">
+                        <h4>May<span class="date">6</span></h4>
+                        <h3>Research Exchange</h3>
+                        <p>Find the best online resources to help with your invesments...</p>
+                        <button class="btn-events">Get More Insight</button>
+                        <p>London, England</p>
+                    </div>
             </div>
         </div>
     </section>
@@ -135,7 +142,9 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/app.js"></script>
+    
 
 </body>
 </html>
