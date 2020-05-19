@@ -24,7 +24,16 @@ navlinks.forEach(element => {
             menuOpen = false;
         
     })
+
+    element.addEventListener('mouseenter' , () => {
+        element.classList.add('underline')
+    })
+
+    element.addEventListener('mouseleave' , () => {
+        element.classList.remove('underline')
+    })
 })
+
 
 // Scroll
 const navigation = document.querySelector('.container-nav');
@@ -68,8 +77,7 @@ window.addEventListener('load', () => {
     ) : 
     (   
         null
-    )
-    
+    )  
 })
 
 window.addEventListener('resize', () => {
@@ -90,13 +98,8 @@ window.addEventListener('resize', () => {
             null
         ) : (
             location.reload()
-        )
-        
-        
-        
-        
-    )
-    
+        )   
+    )   
 })
 
 
