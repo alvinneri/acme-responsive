@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
         document.querySelector('.draggable').classList.add('flex-row'),
         document.querySelector('.glider-dots').style.display = 'none'
     ) : 
-    (
+    (   
         null
     )
     
@@ -54,7 +54,12 @@ window.addEventListener('resize', () => {
         document.querySelector('.glider-dots').style.display = 'none'
     ) : 
     (   
+        document.querySelector('.glider') ? (
+            null
+        ) : (
             location.reload()
+        )
+        
         
         
         
