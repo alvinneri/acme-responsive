@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/glider.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c5c969ab6e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,11 +27,11 @@
                         Research Professional <span>Platform</span>
                     </div>               
                     <ul class="nav-items">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Insights</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Contacts Us</a></li>
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#insights">Insights</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contacts">Contacts Us</a></li>
                     </ul>    
                 </div>
             </div>
@@ -59,7 +60,7 @@
                 <p>How are factors being used around the word?</p>
                     <div class="container-cards">
                         <div class="glider-contain">
-                            <div class="glider">  
+                            <div class="glider glider-insights">  
                                 <div class="card">
                                     <img src="./images/card1.png" alt="">
                                     <h3>Global Factor<br/>Investing Factor</h3>
@@ -98,47 +99,55 @@
     <!-- End of About ------------------------------------------------>
 
     <section id="events">
-        <div class="container-events">
+        <div class="container-insights">
             <div class="margin">
                 <h3>Upcoming Events</h3>
                 <p>This needs a great tagline but i'll fit it in later</p>
-                    <div class="card">
-                        <img src="./images/events.jpg" alt="">
-                        <h4>JAN<span class="date">28</span></h4>
-                        <h3>Insights Exchange Network</h3>
-                        <p>Join us for this conference showcasing innovation...</p>
-                        <button class="btn-events">Get More Insight</button>
-                        <p>Chicago, IL</p>
+                <div class="container-cards">
+                    <div class="glider-contain">
+                        <div class="glider glider-events">
+                            <div class="card">
+                                <h4>JAN <br> <span class="date">28</br></h4>
+                                <h3>Insights Exchange Network</h3>
+                                <p>Join us for this conference showcasing innovation...</p>
+                                <button class="btn-events">Get More Insight</button>
+                                <p class="address">Chicago, IL</p>
+                            </div>
+                            <div class="card">
+                                <h4>FEB <br> <span class="date">12</span></h4>
+                                <h3>Citywide Buyer's <br> Retreat</h3>
+                                <p>Find out how banks are responding to the changing future of interest...</p>
+                                <button class="btn-events">Get More Insight</button>
+                                <p class="address">The Wagner, New York</p>
+                            </div>
+                            <div class="card">
+                                <h4>May <br>    <span class="date">6</span></h4>
+                                <h3>Research <br> Exchange</h3>
+                                <p>Find the best online resources to help with your invesments...</p>
+                                <button class="btn-events">Get More Insight</button>
+                                <p class="address">London, England</p>
+                            </div>
+                        </div>
+                        <div role="tablist" class="glider-dots"></div>
                     </div>
-                    <div class="card">
-                        <img src="./images/events.jpg" alt="">
-                        <h4>FEB<span class="date">12</span></h4>
-                        <h3>Citywide Buyer's Retreat</h3>
-                        <p>Find out how banks are responding to the changing future of interest...</p>
-                        <button class="btn-events">Get More Insight</button>
-                        <p>The Wagner, New York</p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/events.jpg" alt="">
-                        <h4>May<span class="date">6</span></h4>
-                        <h3>Research Exchange</h3>
-                        <p>Find the best online resources to help with your invesments...</p>
-                        <button class="btn-events">Get More Insight</button>
-                        <p>London, England</p>
-                    </div>
+                </div>
+                    
             </div>
         </div>
     </section>
     <!-- End of Events ------------------------------------------------>
 
-    <footer>
+    <footer id="contacts">
         <div class="container-footer">
             <div class="margin">
                 <div class="footer-col">
                     <p>Call us at 111-222-333 <br> for more information</p>
                 </div>
-                <div class="footer-col">
-                    <p>Social Share <i></i> <i></i> <i></i> <i></i></p>
+                <div class="socials">
+                    <p>Social Share </p>
+                    <a href="https://github.com/alvinneri"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://twitter.com/alvinneri" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/binbai1391" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                 </div>
             </div>
         </div>

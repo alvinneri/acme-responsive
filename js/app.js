@@ -25,20 +25,33 @@ window.addEventListener("scroll", (e)  => {
     }
 });
 
-var glider = new Glider(document.querySelector('.glider'), {
+var glider1 = new Glider(document.querySelector('.glider-insights'), {
     slidesToShow: 1,
     dots: '.glider-dots',
     draggable: true,
     
   });
 
+var glider2 = new Glider(document.querySelector('.glider-events'), {
+slidesToShow: 1,
+dots: '.glider-dots',
+draggable: true,
+
+});
+
 // Glider To Flex
 window.addEventListener('load', () => {
     
     window.innerWidth >= 768 ? (
-        glider.destroy(),
-        document.querySelector('.draggable').classList.add('flex-row'),
-        document.querySelector('.glider-dots').style.display = 'none'
+        glider1.destroy(),
+        glider2.destroy(),
+        document.querySelectorAll('.draggable').forEach(element => {
+            
+            element.classList.add('flex-row')
+        }),
+        document.querySelectorAll('.glider-dots').forEach(element => {
+            element.style.display = 'none'
+        })
     ) : 
     (   
         null
@@ -49,9 +62,15 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
     
     window.innerWidth >= 768 ? (
-        glider.destroy(),
-        document.querySelector('.draggable').classList.add('flex-row'),
-        document.querySelector('.glider-dots').style.display = 'none'
+        glider1.destroy(),
+        glider2.destroy(),
+        document.querySelectorAll('.draggable').forEach(element => {
+            
+            element.classList.add('flex-row')
+        }),
+        document.querySelectorAll('.glider-dots').forEach(element => {
+            element.style.display = 'none'
+        })
     ) : 
     (   
         document.querySelector('.glider') ? (
