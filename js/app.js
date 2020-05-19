@@ -1,17 +1,30 @@
 const btn = document.querySelector('.hamburger');
-const navlinks = document.querySelector('.nav-items');
+const navitems = document.querySelector('.nav-items');
+const navlinks = document.querySelectorAll('.nav-links');
+
 let menuOpen = false;
+
 btn.addEventListener('click', ()=>{
     if(!menuOpen){
         btn.classList.add('open');
-        navlinks.classList.add('show-menu');
+        navitems.classList.add('show-menu');
         menuOpen = true;
     }else{
         btn.classList.remove('open');
-        navlinks.classList.remove('show-menu');
+        navitems.classList.remove('show-menu');
         menuOpen = false;
     }
 });
+
+navlinks.forEach(element => {
+    element.addEventListener('click',() => {
+        
+            btn.classList.remove('open');
+            navitems.classList.remove('show-menu');
+            menuOpen = false;
+        
+    })
+})
 
 // Scroll
 const navigation = document.querySelector('.container-nav');
