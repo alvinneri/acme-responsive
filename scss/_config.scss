@@ -47,3 +47,9 @@ a {
     width: 80%;
     margin: 0 auto;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

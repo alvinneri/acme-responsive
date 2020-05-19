@@ -27,12 +27,34 @@ window.addEventListener("scroll", (e)  => {
     }
 });
 
+var glider = new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '.glider-dots',
+    draggable: true,
+    
+  });
+
+window.addEventListener('load', () => {
+    
+    window.innerWidth >= 768 ? (
+        glider.destroy(),
+        document.querySelector('.draggable').classList.add('flex-row'),
+        document.querySelector('.glider-dots').style.display = 'none'
+    ) : 
+    (
+        glider = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            dots: '.glider-dots',
+            draggable: true,
+            
+          }),
+
+        glider.refresh(true)
+
+        
+    )
+    
+})
 
 
-// GliderJs
-new Glider(document.querySelector('.glider'),{
-    slidesToShow : 1,
-    draggable : true,
-    dots : '#dots',
-   
-});
+
