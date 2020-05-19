@@ -34,7 +34,7 @@ var glider1 = new Glider(document.querySelector('.glider-insights'), {
 
 var glider2 = new Glider(document.querySelector('.glider-events'), {
 slidesToShow: 1,
-dots: '.glider-dots',
+dots: '.glider-dots2',
 draggable: true,
 
 });
