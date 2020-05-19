@@ -18,8 +18,6 @@ const navigation = document.querySelector('.container-nav');
 
 window.addEventListener("scroll", (e)  => {
     var scroll = this.scrollY;
-    console.log(scroll)
-
     if(scroll == 0){ 
         navigation.style.position = 'relative'
     } else {
@@ -34,6 +32,7 @@ var glider = new Glider(document.querySelector('.glider'), {
     
   });
 
+// Glider To Flex
 window.addEventListener('load', () => {
     
     window.innerWidth >= 768 ? (
@@ -42,15 +41,22 @@ window.addEventListener('load', () => {
         document.querySelector('.glider-dots').style.display = 'none'
     ) : 
     (
-        glider = new Glider(document.querySelector('.glider'), {
-            slidesToShow: 1,
-            dots: '.glider-dots',
-            draggable: true,
-            
-          }),
+        null
+    )
+    
+})
 
-        glider.refresh(true)
-
+window.addEventListener('resize', () => {
+    
+    window.innerWidth >= 768 ? (
+        glider.destroy(),
+        document.querySelector('.draggable').classList.add('flex-row'),
+        document.querySelector('.glider-dots').style.display = 'none'
+    ) : 
+    (   
+            location.reload()
+        
+        
         
     )
     
